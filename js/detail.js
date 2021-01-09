@@ -1,11 +1,22 @@
-$('.search_nav>ul>li>a').on('mouseenter', function () {
-    $(this).siblings('.items').stop().slideDown()
+// $('.search_nav>ul>li>a').on('mouseenter', function () {
+//     $(this).siblings('.items').stop().slideDown()
+
+// })
+// $('.search_nav>ul>li>a').on('mouseleave', function () {
+//     $(this).siblings('.items').stop().slideUp()
+
+// })
+
+$('.search_nav>ul>li').on('mouseenter', function () {
+    $(this).children('.items').stop().slideDown()
 
 })
-$('.search_nav>ul>li>a').on('mouseleave', function () {
-    $(this).siblings('.items').stop().slideUp()
+$('.search_nav>ul>li').on('mouseleave', function () {
+    $(this).children('.items').stop().slideUp()
 
 })
+
+
 
 $('.aj_inp').click(function () {
     $('.search_ul').empty()   //清空ul里面所有内容
